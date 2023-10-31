@@ -5,7 +5,7 @@
      --color-black: #1d1d1d;
      --color-white: #ffff;
      --color-light: #e2e2e2;
-     --color-gray: #727272;
+     --color-gray: #9b9b9b;
      --color-primary: #4940ee;
      --color-secondary: #c7c4ff;
      --color-danger: #f67676;
@@ -13,7 +13,7 @@
 
      --border-radius: 1.4rem;
      --card-border-radius: 1rem;
-     --btn-padding: 0.6rem 2rem;
+     --btn-padding: .8rem 2rem;
      --search-padding: 0.6rem 1rem;
      --card-padding: 1rem;
      
@@ -63,6 +63,8 @@ img {
 .btn {
     display: inline-block;
     font-size: 0.9rem;
+    font-weight: 700;
+    font-family: Inter;
     border-radius: var(--border-radius);
     padding: var(--btn-padding);
     cursor: pointer;
@@ -234,4 +236,177 @@ main .container .left-column .profile .user-handle p {
 .left-column .sidebar .active span,
 .left-column .sidebar .active h3 {
     color: var(--color-primary);
+}
+
+.left-column .sidebar .active::before {
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 100%;
+    position: absolute;
+    background: var(--color-primary);
+}
+
+.left-column .sidebar .menu-item:first-child.active {
+    border-top-left-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+
+.left-column .sidebar .menu-item:last-child.active {
+    border-top-left-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+
+.left-column .btn {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-family: Inter;
+    padding: .8rem;
+}
+
+
+
+
+/********** NOTIFICATION POPUP STYLING **********/
+
+.left-column .notification-popup {
+    display: none;
+    position: absolute;
+    left: 110%;
+    top: 0;
+    width: 30rem;
+    height: auto;
+    scrollbar-width: thin;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: 0 0  2rem var(--color-primary);
+    z-index: 8;
+}
+
+.left-column .notification-popup::before {
+    position: absolute;
+    top: 1.4rem;
+    left: -0.6rem;
+    display: block;
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--color-white);
+    transform: rotate(45deg);
+}
+
+.left-column .notification-popup > div {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.left-column .notification-popup > div:last-child {
+    margin-bottom: 0;
+}
+
+.left-column .notification-popup small {
+    display: block;
+}
+
+
+
+
+/********** MIDDLE STYLING **********/
+
+.middle-column .stories {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    height: 12rem;
+}
+
+.middle-column .stories .story {
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+.middle-column .stories .story .profile-photo {
+    z-index: 1;
+    border: 2px solid var(--color-primary);
+}
+
+.middle-column .stories .story .name {
+    z-index: 1;
+}
+
+.middle-column .stories .story::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+    top: 0;
+    background: black;
+    filter: opacity(50%);
+}
+
+.middle-column .stories .story:nth-child(1) {
+    background: url("./assets/story4.jpeg") no-repeat center center/cover;
+    
+}
+.middle-column .stories .story:nth-child(2) {
+    background: url("./assets/story1.jpg") no-repeat center center/cover;
+    
+}
+.middle-column .stories .story:nth-child(3) {
+    background: url("./assets/story2.jpg") no-repeat center center/cover;
+    
+}
+.middle-column .stories .story:nth-child(4) {
+    background: url("./assets/story5.jpg") no-repeat center center/cover;
+    
+}
+.middle-column .stories .story:nth-child(5) {
+    background: url("./assets/story3.jpg") no-repeat center center/cover;
+    
+}
+.middle-column .stories .story:nth-child(6) {
+    background: url("./assets/story6.JPG") no-repeat center center/cover;
+    
+}
+
+
+
+
+/********** CREATE-POST STYLING **********/
+
+.middle-column .create-post {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-white);
+    padding: 0.4rem 0.4rem;
+    border-radius: 1.5rem;
+}
+
+.middle-column .create-post input[type="text"] {
+    justify-self: start;
+    width: 70%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color-dark);
+    margin-right: 1rem;
 }
