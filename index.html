@@ -1,11 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConnectHub</title>
+    <title>ConnectHub - Connect with your Friends & Family</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- **************************************** NAV-BAR HTML**************************************** -->
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                ConnectHub
+            </h2>
+            <div class="search-bar">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <input type="search" placeholder="Search ConnectHub">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create Post</label>
+                <div class="profile-photo">
+                    <img src="assets/profile3.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ******************************  MAIN HTML ******************************  -->
+
+    <main>
+        <div class="container">
+
+            <!-- ******************************  LEFT ******************************  -->
+
+            <div class="left-column">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="assets/profile3.jpeg" alt="">
+                    </div>
+                    <div class="user-handle">
+                        <h4>Otunba Aina</h4>
+                        <p class="text-muted">@otunbaaina</p>
+                    </div>
+                </a>
+
+                <!-- ****************************** SIDEBAR HTML ****************************** -->
+
+                <div class="sidebar">
+
+                    <a  class="menu-item">
+                        <span class="material-symbols-outlined">home</span><h3>Home</h3>
+                    </a>
+                    <a  class="menu-item active">
+                        <span class="material-symbols-outlined">search</span><h3>Explore</h3>
+                    </a>
+                    <a  class="menu-item" id="notifications">
+                        <span class="material-symbols-outlined">notifications<small class="notification-count">3+</small></span><h3>Notifications</h3>
+
+                        <!-- ******************** NOTIFICATION POPUP ******************** -->
+                        
+                        <div class="notification-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/profile1.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Manchester United</b> just posted a new photo.
+                                    <small class="text-muted">39s</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/profile2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>ChampagnePapi</b> just posted a new photo.
+                                    <small class="text-muted">1m</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/profile6.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ciroma Chukwuma</b> has requested to follow you.
+                                    <small class="text-muted">16m</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/profile5.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Charles Ikenna and 20 others</b> liked your post.
+                                    <small class="text-muted">40m</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a  class="menu-item" id="message-notifications">
+                        <span class="material-symbols-outlined">message<small class="notification-count">3+</small></span><h3>Messages</h3>
+                    </a>
+                    <a  class="menu-item">
+                        <span class="material-symbols-outlined">bookmark</span><h3>Bookmarks</h3>
+                    </a>
+                    <a  class="menu-item">
+                        <span class="material-symbols-outlined">palette</span><h3>Theme</h3>
+                    </a>
+                    <a  class="menu-item">
+                        <span class="material-symbols-outlined">settings</span><h3>Settings</h3>
+                    </a>
+                        
+                </div>
+
+                <button class="btn-primary">View Profile</button>
+
+                <!-- ****************************** SIDEBAR END ****************************** -->
+
+            </div>
+
+
+
+            <!-- ******************************  MIDDLE ******************************  -->
+
+            <div class="middle-column">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde exercitationem soluta, neque odit architecto id laborum itaque iste reprehenderit inventore assumenda cupiditate hic officia quidem cumque, dignissimos tenetur? A tenetur, laudantium impedit asperiores voluptate harum? Architecto magni itaque inventore? Eos ullam non, reprehenderit maiores et dicta. Eveniet velit, vel voluptates eius beatae libero nesciunt pariatur placeat in eligendi modi aperiam distinctio vero ipsum ut necessitatibus at cum atque exercitationem? Ratione veritatis nisi, iusto inventore, ad ea id debitis obcaecati amet soluta, eligendi blanditiis sapiente molestias? Repellendus blanditiis illum ipsum eligendi itaque cum inventore placeat aliquam? Nulla id in consequuntur debitis?
+            </div>
+
+
+            <!-- ********** RIGHT ********** -->
+
+            <div class="right-column">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque eum quaerat facere sequi nisi corporis, distinctio error eligendi rerum libero aperiam tenetur at repellat omnis eius hic quae deserunt voluptas explicabo alias fugit quasi. Provident aut maiores ipsam iure! Ipsam quo inventore ducimus sunt iusto atque eius, ea accusamus officiis earum a eos quia! Eveniet sed voluptas facilis mollitia qui ab tenetur cumque at laborum veniam nemo ea vero dolor quia commodi eius provident, iure nulla rem, corporis sequi et ipsa? Animi ullam error culpa dolorum assumenda, eligendi vero provident dolorem accusantium. Nam amet unde consectetur nulla, odit rerum?
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
