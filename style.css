@@ -409,4 +409,5 @@ main .container .left-column .profile .user-handle p {
     background: transparent;
     color: var(--color-dark);
     margin-right: 1rem;
+    font-family: "Inter";
 }
