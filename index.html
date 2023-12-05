@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConnectHub - Connect with your Friends & Family</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,1,0" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -62,12 +63,12 @@
                     <a  class="menu-item">
                         <span class="material-symbols-outlined">search</span><h3>Explore</h3>
                     </a>
-                    <a  class="menu-item" id="notifications">
+                    <a  class="menu-item notif" id="notifications">
                         <span class="material-symbols-outlined">notifications<small class="notification-count">3+</small></span><h3>Notifications</h3>
 
                         <!-- ******************** NOTIFICATION POPUP ******************** -->
                         
-                        <div class="notification-popup">
+                        <div class="notification-popup block-display">
                             <div>
                                 <div class="profile-photo">
                                     <img src="assets/profile1.jpg" alt="">
@@ -131,7 +132,7 @@
                         
                 </div>
 
-                <button class="btn-primary btn">View Profile</button>
+                <button class="btn-primary btn" id="viewProfile">View Profile</button>
 
             </div>
 
@@ -193,6 +194,10 @@
                 <!-- ****************************** FEED ****************************** -->
 
                 <div class="feeds">
+
+                    <!-- ****************************** FEED 1 ****************************** -->
+
+
                     <div class="feed">
                         <div class="head">
                             <div class="user">
@@ -203,10 +208,10 @@
                                     <h3>Manchester United</h3>
                                     <small>Manchester, United Kingdom</small>
                                 </div>
-                                <span class="edit">
-                                    <span class="material-symbols-outlined">more_horiz</span>
-                                </span>
                             </div>
+                            <span class="edit">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </span>
                         </div>
 
                         <div class="feed-photo">
@@ -215,7 +220,7 @@
 
                         <div class="action-buttons">
                             <div class="interaction-buttons">
-                                <span class="material-symbols-outlined">favorite</span>
+                                <span class="material-symbols-sharp">favorite</span>
                                 <span class="material-symbols-outlined">comment</span>
                                 <span class="material-symbols-outlined">share</span>
                             </div>
@@ -228,21 +233,194 @@
                             <span><img src="assets/profile3.jpeg" alt=""></span>
                             <span><img src="assets/profile13.PNG" alt=""></span>
                             <span><img src="assets/profile8.jpeg" alt=""></span>
+
+                            <p>Liked by <b>You</b> and <b>24,638 others</b></p>
+                        </div>
+
+                        <div class="feed-caption">
+                            <p><b>Manchester United</b> Bending it in opposite the Stretford End <span style="color: rgb(45, 45, 255);">@DavidBeckham7</span></p>
+                        </div>
+
+                        <div class="feed-comments">
+                            <p class="text-muted">View all 562 comments</p>
+                            <p><b>Otunba Aina</b> What a legend! 🎯</p>
+                        </div>
+
+                        <div class="feed-timestamp text-muted">
+                            <p>3s ago</p>
+                        </div>
+                    </div>
+
+
+                    <!-- ****************************** FEED 2 ****************************** -->
+
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="assets/profile2.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Champagne Papi</h3>
+                                    <small>Toronto, Canada</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </span>
+                        </div>
+
+                        <div class="feed-photo">
+                            <img src="assets/feed6.webp" alt="">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="material-symbols-sharp">favorite</span>
+                                <span class="material-symbols-outlined">comment</span>
+                                <span class="material-symbols-outlined">share</span>
+                            </div>
+                            <div class="bookmark-button">
+                                <span class="material-symbols-outlined">bookmark</span>
+                            </div>
+                        </div>
+
+                        <div class="feed-likes">
+                            <span><img src="assets/profile13.PNG" alt=""></span>
+                            <span><img src="assets/profile12.jpg" alt=""></span>
+                            <span><img src="assets/profile10.jpg" alt=""></span>
+
+                            <p>Liked by <b>Charles Ikenna</b> and <b>149,822 others</b></p>
+                        </div>
+
+                        <div class="feed-caption">
+                            <p><b>Champagne Papi</b> Great crowd in Toronto tonight</p>
+                        </div>
+
+                        <div class="feed-comments">
+                            <p class="text-muted">View all 1,694 comments</p>
+                        </div>
+
+                        <div class="feed-timestamp text-muted">
+                            <p>15mins ago</p>
+                        </div>
+                    </div>
+
+
+                     <!-- ****************************** FEED 3 ****************************** -->
+
+
+                     <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="assets/profile6.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Ciroma Chukwuma</h3>
+                                    <small>Bali, Indonesia</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </span>
+                        </div>
+
+                        <div class="feed-photo">
+                            <img src="assets/feed1.jpg" alt="">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="material-symbols-sharp">favorite</span>
+                                <span class="material-symbols-outlined">comment</span>
+                                <span class="material-symbols-outlined">share</span>
+                            </div>
+                            <div class="bookmark-button">
+                                <span class="material-symbols-outlined">bookmark</span>
+                            </div>
+                        </div>
+
+                        <div class="feed-likes">
+                            <span><img src="assets/profile12.jpg" alt=""></span>
+                            <span><img src="assets/profile5.jpg" alt=""></span>
+                            <span><img src="assets/profile11.jpg" alt=""></span>
+
+                            <p>Liked by <b>Maddison Rae</b> and <b>295 others</b></p>
+                        </div>
+
+                        <div class="feed-caption">
+                            <p><b>Ciroma Chukwuma</b> Summer waves are always the best 💯</p>
+                        </div>
+
+                        <div class="feed-comments">
+                            <p class="text-muted">View all 12 comments</p>
+                        </div>
+
+                        <div class="feed-timestamp text-muted">
+                            <p>1hr ago</p>
                         </div>
                     </div>
                 </div>
             </div>
 
+
+            <!-- ****************************** END OF MIDDLE ****************************** -->
             
 
 
-            <!-- ********** RIGHT ********** -->
+            <!-- ****************************** RIGHT ****************************** -->
 
             <div class="right-column">
-                
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <span class="material-symbols-outlined">edit_square</span>
+                    </div>
+
+                    <div class="search-bar">
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="search" placeholder="Search Messages" id="message-search">
+                    </div>
+
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(4)</h6>
+                    </div>
+
+                    <div class="message-chat">
+                        <div class="profile-photo">
+                            <img src="assets/profile2.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Champagne Papi</h5>
+                            <P class="text-muted">How far. I fit see 2k for your hand?</P>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="assets/profile13.PNG" alt="">
+                            </div>
+                            <div>
+                                <h5>Charles Ikenna</h5>
+                                <p class="text-muted">Please follow back. I'm a huge fan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
