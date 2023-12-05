@@ -110,7 +110,7 @@ nav .container {
     justify-content: space-between;
 }
 
-nav .search-bar {
+.search-bar {
     background: var(--color-light);
     border-radius: var(--border-radius);
     padding: var(--search-padding);
@@ -122,7 +122,7 @@ nav .search-bar span {
     font-size: 1.3rem;
 }
 
-nav .search-bar input {
+.search-bar input {
     background: transparent;
     width: 30vw;
     margin-left: 1rem;
@@ -322,7 +322,7 @@ main .container .left-column .profile .user-handle p {
 
 
 
-/********** MIDDLE STYLING **********/
+/********** MIDDLE COLUMN STYLING **********/
 
 .middle-column .stories {
     display: flex;
@@ -494,3 +494,85 @@ main .container .left-column .profile .user-handle p {
     margin-top: .5rem;
 }
 
+
+
+
+/********** RIGHT COLUMN STYLING **********/
+
+main .right-column {
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+    bottom: 0%;
+}
+
+.right-column .messages {
+    padding: var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+}
+
+.right-column .messages .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.right-column .messages .heading span {
+    font-size: 1.4rem;
+}
+
+.right-column .messages .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.right-column .messages .category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right-column .messages .category h6 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0.6rem;
+    /* margin: 3px; */
+    border-bottom: 2px solid var(--color-light);
+    cursor: pointer;
+}
+
+.right-column .messages .category .active {
+    border-color: var(--color-dark);
+}
+
+.right-column .messages .message-chat {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.right-column .messages .message-chat:last-child {
+    margin-bottom: 0;
+}
+
+.right-column .messages .message-chat p {
+    font-size: 0.8rem;
+}
+
+.right-column .messages .message-chat .unread::after {
+    position: absolute;
+    bottom: 1.7rem;
+    right: 0;
+    display: block;
+    content: "";
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    width: .3rem;
+    height: .3rem;
+}
