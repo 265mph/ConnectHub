@@ -576,3 +576,24 @@ main .right-column {
     width: .3rem;
     height: .3rem;
 }
+
+.right-column .messages .message-chat .profile-photo {
+    overflow: visible;
+    position: relative;
+
+}
+
+.right-column .messages .message-chat .profile-photo img {
+    border-radius: 50%;
+}
+
+.right-column .messages .message-chat .profile-photo .active {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+    background: var(--color-success);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
